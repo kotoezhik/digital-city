@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Digital-city</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="/favicon.png" type="image/png">
+
+  <link rel="stylesheet" href="/css/style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script src="/js/scripts.js"></script>
+</head>
+
+<body>
+  <header class="header" id="header">
+
+    <div class="header-top">
+      <div class="container">
+        <div class="logo"><img src="/img/logo.png" alt="digital-city">
+          <div class="logo__name">digital-city</div>
+        </div>
+        <nav class="nav" id="nav">
+          <ul class="">
+            <li><a href="#">Компания</a></li>
+            <li><a href="#">Вакансии</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="header-phone"><a href="tel:+78314555515">+7 (831) 455-55-15</a></div>
+      </div>
+    </div>
+    <div class="header__slogan">
+      <div class="container">
+        <h1>Развивайся в команде профессионалов</h1>
+      </div>
+    </div>
+
+  </header>
+
+  <div class="block block-about" id="about">
+    <div class="container">
+      <h2>Компания</h2>
+      <p>Digital City — компания, реализующая комплексные решения в сфере информационных технологий. Мы рады сотрудничеству с творческими людьми, готовыми к работе в инновационных проектах.</p>
+      <p>Среди наших заказчиков крупные российские корпорации, банки и другие финансовые институты. Мы ценим инициативность, коммуникабельность, желание достигать результатов.</p>
+      <a href="#">Наш офис</a>
+    </div>
+  </div>
+
+  <div class="block block-vacancies" id="vacancies">
+    <div class="container">
+      <h2>Вакансии</h2>
+      <div class="block-vacancies__container">
+
+        <div class="vacancy">
+          <h3>Middle PHP разработчик </h3>
+          <div class="vacancy__footer">
+            <div class="vacancy__salary"><span class="vacancy__label">Зарплата </span>80 - 120.000 ₽</div>
+            <div class="vacancy__experience"><span class="vacancy__label">Опыт работы </span>от одного года (разработка back-end)</div>
+          </div>
+          <div class="vacancy__jobs-amount"><span>4</span> вакансии</div>
+        </div>
+        <div class="vacancy">
+          <h3>Тим лидер / архитектор</h3>
+          <div class="vacancy__footer">
+            <div class="vacancy__salary"><span class="vacancy__label">Зарплата </span>80 - 120.000 ₽</div>
+            <div class="vacancy__experience"><span class="vacancy__label">Опыт работы </span>от одного года</div>
+          </div>
+          <div class="vacancy__jobs-amount"><span>1</span> вакансия</div>
+        </div>
+        <div class="vacancy">
+          <h3>Бизнес-аналитик</h3>
+          <div class="vacancy__footer">
+            <div class="vacancy__salary"><span class="vacancy__label">Зарплата </span>80 - 120.000 ₽</div>
+            <div class="vacancy__experience"><span class="vacancy__label">Опыт работы </span>от одного года</div>
+          </div>
+          <div class="vacancy__jobs-amount"><span>1</span> вакансия</div>
+        </div>
+        <div class="vacancy">
+          <h3>Руководитель тестировщиков</h3>
+          <div class="vacancy__footer">
+            <div class="vacancy__salary"><span class="vacancy__label">Зарплата </span>80 - 120.000 ₽</div>
+            <div class="vacancy__experience"><span class="vacancy__label">Опыт работы </span>от одного года</div>
+          </div>
+          <div class="vacancy__jobs-amount"><span>1</span> вакансия</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="block block-offer">
+    <div class="container">
+      <h2>Мы предлагаем</h2>
+      <ul>
+        <li>Оформление по ТК РФ,<br> соц. пакет</li>
+        <li>40 часовая рабочая неделя,<br> гибкий график</li>
+        <li>Возможности для карьерного<br> и профессионального роста</li>
+        <li>Современное<br> оборудование</li>
+        <li>Комфортабельный офис<br> в центре города</li>
+        <li>Бесплатное парковочное<br> место</li>
+        <li>ДМС</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="block block-form">
+    <div class="container">
+      <form enctype="multipart/form-data" action="callback.php" id="form-callback" method="post">            
+        <div class="form-header">Пишите нам</div>
+        <div class="form-status"></div>
+        <div class="flex-between">
+          <input type="text" name="name" id="msg-name" placeholder="Ваше имя*" value="Иванов" required>
+          <input type="tel" name="phone" id="msg-phone" placeholder="Телефон*" value="12345" required>
+          <input type="email" name="email" id="msg-email" placeholder="Эл. почта" value="sur_prize@mail.ru">
+        </div>
+        <textarea name="message" id="msg-message" cols="30" rows="10" placeholder="Ваше сообщение"></textarea>
+        <div class="file-upload">
+          <input type="hidden" name="MAX_FILE_SIZE" value="30000">
+          <div class="file-upload__filename" id="filename"></div>
+          <div class="file-upload__label-container">
+            <label>
+              <input type="file" name="filefield" id="msg-file">
+              <span>Прикрепить резюме</span>
+            </label>
+          </div>
+        </div>
+        <div class="form-callback__footer">
+          <button type="submit">Отправить</button>          
+          <div class="form-callback__warning">Нажимая кнопку, вы соглашаетесь на обработку персональных данных</div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="block block-map">
+    <div class="container yandex-map" id="ya_map"></div>
+  </div>
+
+
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="logo">
+        <img src="/img/logo-footer.png" alt="Digital city logo">
+        <div class="logo__name">digital-city</div>
+      </div>
+      <ul class="footer-nav">
+        <li><a href="#">Компания</a></li>
+        <li><a href="#">Вакансии</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+      <div class="copyright">© digital-city, 2018</div>
+    </div>
+  </footer>
+
+  <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+</body>
+
+</html>
